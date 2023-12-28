@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    >
+
+    <ImageView
+        android:id="@+id/logoplay"
+        android:layout_width="146dp"
+        android:layout_height="143dp"
+        android:layout_above="@+id/centro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/risorsa_5"
+        android:contentDescription="@string/logo_di_megatris"/>
+
+    <ImageButton
+        android:id="@+id/pvp"
+        android:layout_width="200dp"
+        android:layout_height="95dp"
+        android:layout_above="@+id/centro"
+        android:layout_alignEnd="@+id/centro"
+        android:background="@drawable/risorsa_9"
+        android:contentDescription="@string/player_vs_player"/>
+
+    <ImageButton
+        android:id="@+id/pvpc"
+        android:layout_width="200dp"
+        android:layout_height="95dp"
+        android:layout_below="@+id/centro"
+        android:layout_alignStart="@+id/centro"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/risorsa_8"
+        android:contentDescription="@string/player_vs_pc"/>
+
+    <TextView
+        android:id="@+id/centro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+    <Button
+        android:id="@+id/indietro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:backgroundTint="@color/log"
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+</RelativeLayout>
+
+

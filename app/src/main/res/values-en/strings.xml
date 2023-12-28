@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="benvenuto">welcome</string>
+    <string name="questa_e_la_tabella_principale">QUESTA E\' LA TABELLA PRINCIPALE</string>
+    <string name="mettiamo_caso_che_il_giocatore_metta_la_x_in_basso_a_sinistra">let\'s say the player puts the x in the lower left…</string>
+    <string name="l_avversario_dovr_giocare_in_basso_a_sinistra_ma_della_tabella_principale">the opponent will have to play in the lower left but of the main table</string>
+    <string name="in_altre_parole_la_tua_scelta_determiner_una_parte_della_scelta_del_tuo_avversario_sii_furbo">in other words, your choice will determine a part of your opponent\'s choice, be smart!</string>
+    <string name="facendo_tris_nella_tabella_piccola_conquisti_la_casella">by making three of a kind in the small table, you conquer the square</string>
+    <string name="per_vincere_devi_fare_tris_nella_tabella_principale">to win you must make three of a kind in the main table</string>
+    <string name="ricomincia_tutorial">restart tutorial</string>
+    <string name="clicca_sopra_o_sotto">click on top or above</string>
+    <string name="italiano">italian</string>
+    <string name="inglese">english</string>
+    <string name="tabella">table</string>
+    <string name="casella">small square</string>
+    <string name="cerchio_disegnato">" circle example"</string>
+    <string name="in_ogni_sezione_della_tabella_c_un_altra_tabella">in each section of the table there is another table</string>
+    <string name="logo_di_megatris">megatris logo</string>
+    <string name="cerchio">circle</string>
+    <string name="tabella_piccola">small table</string>
+</resources>

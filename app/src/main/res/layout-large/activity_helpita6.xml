@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3">
+
+
+    <ImageView
+        android:id="@+id/tab1"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/h4"
+        android:contentDescription="@string/tabella" />
+
+    <ImageView
+        android:contentDescription="@string/cerchio_disegnato"
+        android:id="@+id/dra3"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/giust"
+        android:layout_alignEnd="@+id/tab1"
+        android:layout_above="@+id/next"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab1"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:contentDescription="@string/in_altre_parole_la_tua_scelta_determiner_una_parte_della_scelta_del_tuo_avversario_sii_furbo"
+        android:text="@string/in_altre_parole_la_tua_scelta_determiner_una_parte_della_scelta_del_tuo_avversario_sii_furbo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/acqua_scuro"
+        android:textSize="50sp"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:contentDescription="@string/next"
+        android:id="@+id/next"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tab1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/next" />
+
+    <ImageButton
+        android:contentDescription="@string/previous"
+        android:id="@+id/previous"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/previous" />
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3"
+    tools:ignore="MissingDefaultResource">
+
+  <ImageView
+      android:id="@+id/lan"
+      android:layout_width="300dp"
+      android:layout_height="25dp"
+      android:layout_centerInParent="true"
+      android:contentDescription="@string/clicca_sopra_o_sotto"
+
+/>
+
+
+  <ImageButton
+      android:id="@+id/itagreen"
+      android:layout_width="400dp"
+      android:layout_height="417dp"
+      android:layout_alignTop="@+id/itawhite"
+      android:layout_alignEnd="@+id/itawhite"
+      android:layout_marginEnd="300dp"
+      android:layout_marginBottom="40dp"
+      android:background="@drawable/itared"
+      android:contentDescription="@string/italiano"/>
+  <ImageButton
+      android:contentDescription="@string/italiano"
+      android:id="@+id/itawhite"
+      android:layout_width="400dp"
+      android:layout_height="417dp"
+      android:background="@drawable/itawhite"
+      android:layout_above="@+id/lan"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="20dp"
+      />
+    <ImageButton
+        android:contentDescription="@string/italiano"
+      android:id="@+id/itared"
+      android:layout_width="400dp"
+      android:layout_height="417dp"
+      android:background="@drawable/itagreen"
+      android:layout_alignTop="@+id/itawhite"
+      android:layout_alignStart="@+id/itawhite"
+      android:layout_marginStart="270dp"
+      android:layout_marginBottom="40dp"
+      />
+
+  <ImageButton
+      android:contentDescription="@string/inglese"
+      android:id="@+id/usawhite"
+      android:layout_width="440dp"
+      android:layout_height="337dp"
+      android:layout_below="@+id/lan"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="40dp"
+      android:background="@drawable/usawhite" />
+
+  <ImageButton
+      android:contentDescription="@string/inglese"
+      android:id="@+id/usared"
+      android:layout_width="440dp"
+      android:layout_height="337dp"
+      android:layout_alignTop="@+id/usawhite"
+      android:layout_alignEnd="@+id/usawhite"
+      android:layout_marginEnd="300dp"
+      android:background="@drawable/usared" />
+  <ImageButton
+      android:contentDescription="@string/inglese"
+      android:id="@+id/usablue"
+      android:layout_width="440dp"
+      android:layout_height="337dp"
+      android:background="@drawable/bluste"
+      android:layout_alignTop="@+id/usawhite"
+      android:layout_alignStart="@+id/usawhite"
+      android:layout_marginStart="300dp"
+      android:layout_below="@+id/lan"
+      />
+
+
+
+</RelativeLayout>

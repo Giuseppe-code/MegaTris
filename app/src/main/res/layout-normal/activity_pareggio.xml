@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3">
+
+    <TextView
+        android:id="@+id/tempoG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pareggio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/play_time"
+        android:textAlignment="center"
+        android:textColor="@color/grigio"
+        android:textSize="35sp" />
+
+    <TextView android:id="@+id/pareggio"
+        android:contentDescription="@string/draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/drawo"
+        android:text="@string/draw"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"/>
+
+    <ImageView
+        android:contentDescription="@string/croce"
+        android:id="@+id/drawx"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/xsenzabordo"
+        />
+    <ImageView
+        android:contentDescription="@string/cerchio"
+        android:id="@+id/drawo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/osenzabordo"
+        />
+
+
+    <Button
+        android:id="@+id/winhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/winplay"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/home"
+        android:contentDescription="@string/home"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/winplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/drawo"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/play_again"
+        android:contentDescription="@string/play"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

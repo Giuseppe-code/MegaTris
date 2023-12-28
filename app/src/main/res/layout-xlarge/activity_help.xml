@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/wel"
+        android:layout_width="635dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/tab1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/welcome"
+        android:contentDescription="@string/welcome"/>
+
+    <ImageView
+        android:id="@+id/tab1"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:background="@drawable/h1"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/tabella"
+        />
+
+    <ImageView
+        android:id="@+id/xxx"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/casella"
+        />
+
+    <ImageView
+        android:contentDescription="@string/casella"
+        android:id="@+id/xxxxxx"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/oooooo"
+        android:layout_alignStart="@+id/oooooo"
+        android:layout_centerInParent="true"
+        android:background="@drawable/xsenzabordo" />
+
+    <ImageView
+        android:contentDescription="@string/casella"
+        android:id="@+id/ooooooo"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/xxxx"
+        android:layout_alignStart="@+id/xxxx"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/osenzabordo" />
+
+    <ImageView
+        android:contentDescription="@string/casella"
+        android:id="@+id/ooo"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_above="@+id/xxx"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/osenzabordo" />
+
+    <ImageView
+        android:contentDescription="@string/casella"
+        android:id="@+id/oooo"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/xxx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/osenzabordo" />
+
+    <ImageView
+        android:contentDescription="@string/casella"
+        android:id="@+id/xxxx"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_above="@+id/xxx"
+        android:layout_alignEnd="@+id/tab1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/xsenzabordo" />
+
+    <ImageView
+        android:contentDescription="@string/casella"
+        android:id="@+id/xxxxx"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/xxx"
+        android:layout_alignEnd="@+id/tab1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/xsenzabordo" />
+
+
+    <ImageView
+        android:id="@+id/oooooo"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_above="@+id/xxx"
+        android:layout_alignStart="@+id/tab1"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/osenzabordo"
+        android:contentDescription="@string/casella"/>
+
+
+    <ImageView
+        android:id="@+id/ooooo"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/xxx"
+        android:layout_alignStart="@+id/tab1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/osenzabordo"
+        android:contentDescription="@string/casella"/>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="310dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/tab1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/next"
+        android:contentDescription="@string/next"/>
+
+
+</RelativeLayout>

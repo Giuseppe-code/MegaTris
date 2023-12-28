@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3">
+
+
+    <ImageView
+        android:id="@+id/tab1"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/h4"
+        android:contentDescription="@string/tabella" />
+
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/col5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab1"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:text="@string/in_other_words_your_choice_will_determine_a_part_of_your_opponent_s_choice_be_smart"
+        android:textAlignment="center"
+        android:contentDescription="@string/in_other_words_your_choice_will_determine_a_part_of_your_opponent_s_choice_be_smart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/acqua_scuro"
+        android:textSize="50sp"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:contentDescription="@string/next"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tab1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/next" />
+    <ImageButton
+        android:contentDescription="@string/previous"
+        android:id="@+id/previous"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/previous" />
+
+</RelativeLayout>

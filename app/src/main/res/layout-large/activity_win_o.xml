@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background2">
+
+    <TextView
+        android:id="@+id/haivintoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/oo"
+        android:text="@string/you_win"
+        android:contentDescription="@string/you_win"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/orange"
+        android:textSize="60sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/oo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/osenzabordo"
+        android:contentDescription="@string/cerchio"/>
+
+    <TextView
+        android:id="@+id/tempoG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_above="@+id/haivintoo"
+        android:layout_marginBottom="10dp"
+        android:text="@string/play_time"
+        android:contentDescription="@string/play_time"
+        android:textSize="60sp"
+        android:textColor="@color/grigio"
+        />
+    <Button
+        android:id="@+id/winhomeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winplayo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/home"
+        android:contentDescription="@string/home"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/winplayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/oo"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/play_again"
+        android:contentDescription="@string/play_again"
+        android:textSize="60sp" />
+
+
+</RelativeLayout>

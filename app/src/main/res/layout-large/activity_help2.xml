@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3">
+
+
+    <ImageView
+        android:id="@+id/tab1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/h1"
+        android:contentDescription="@string/tabella" />
+
+    <ImageView
+        android:id="@+id/xxx"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/xsenzabordo"
+        android:contentDescription="@string/croce"/>
+
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab1"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:fontFamily="casual"
+        android:text="@string/this_is_the_main_table"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/acqua_scuro"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:contentDescription="@string/next"
+        android:id="@+id/next"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tab1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/next" />
+
+
+</RelativeLayout>

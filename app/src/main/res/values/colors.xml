@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="acqua_chiaro">#03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_deer">#99e6b3</color>
+    <color name="orange">#F15A24</color>
+    <color name="transparent">#00000000</color>
+    <color name="viola_logo">#5C04B2</color>
+    <color name="acqua_scuro">#00A99D</color>
+    <color name="grigio">#666666</color>
+    <color name="log">#018786</color>
+    <color name="log2">#03dac5</color>
+    <color name="ocean">#7fcdff</color>
+    <color name="oc2">#6699bc</color>
+</resources>

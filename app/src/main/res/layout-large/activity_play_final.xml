@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://docs.microsoft.com/it-it/xamarin/android/app-fundamentals/resources-in-android/resources-for-varying-screens?tabs=windows-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.ggworld.megatris.MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:contentDescription="@string/round"
+        android:id="@+id/turnoo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tempoTrastxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        />
+
+    <ImageView
+        android:contentDescription="@string/round"
+        android:id="@+id/turnox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tempoTrastxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:id="@+id/tempoTrastxt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tabella"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/timer"
+        android:contentDescription="@string/timer"
+        android:textAlignment="center"
+        android:textColor="@color/grigio"
+        android:textSize="65sp" />
+
+    <ImageButton
+        android:contentDescription="@string/restart"
+        android:id="@+id/retry1"
+        android:layout_width="114dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/turnoo"
+        android:layout_alignEnd="@+id/turnoo"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/freccia_retry" />
+
+    <ImageButton
+        android:contentDescription="@string/help"
+        android:id="@+id/where"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_alignStart="@+id/turnoo"
+        android:layout_alignTop="@+id/turnoo"
+        android:layout_marginStart="200dp"
+        android:background="@drawable/dovegioco" />
+
+    <!--primo grid tetris principale-->
+
+
+    <GridLayout
+        android:id="@+id/tabella"
+        android:layout_width="606dp"
+        android:layout_height="606dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/h1"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <!--prima cella-->
+
+        <GridLayout
+            android:id="@+id/grid0"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backcella"
+            android:columnCount="3"
+            android:contentDescription="@string/tabella_piccola"
+            android:rowCount="3"
+            android:scaleType="fitCenter">
+
+            <ImageButton
+                android:id="@+id/button01"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button02"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button03"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button04"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button05"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button06"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button07"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button08"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button09"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+        </GridLayout>
+
+        <!--seconda cella-->
+
+        <GridLayout
+            android:id="@+id/grid1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backcella"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:scaleType="fitCenter">
+
+
+            <ImageButton
+                android:id="@+id/button11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button12"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button16"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button17"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button18"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button19"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+        </GridLayout>
+
+        <!--android:src="@drawable/osenzabordo" />
+        //terza cella-->
+
+        <GridLayout
+            android:id="@+id/grid2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backcella"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:scaleType="fitCenter">
+
+            <ImageButton
+                android:id="@+id/button21"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button22"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button23"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button25"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button26"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button27"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button28"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button29"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+        </GridLayout>
+
+        <!--quarta cella-->
+
+        <GridLayout
+            android:id="@+id/grid3"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backcella"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:scaleType="fitCenter">
+
+            <ImageButton
+                android:id="@+id/button31"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button32"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button33"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button34"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button35"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button36"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button37"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button38"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button39"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+        </GridLayout>
+
+        <!--quinta cella-->
+
+        <GridLayout
+            android:id="@+id/grid4"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backcella"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:scaleType="fitCenter">
+
+            <ImageButton
+                android:id="@+id/button41"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button42"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button43"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button44"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button45"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button46"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button47"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button48"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button49"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+        </GridLayout>
+
+        <!--sesta cella-->
+
+        <GridLayout
+            android:id="@+id/grid5"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backcella"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:scaleType="fitCenter">
+
+            <ImageButton
+                android:id="@+id/button51"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button52"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button53"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button54"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button55"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button56"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button57"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button58"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button59"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+        </GridLayout>
+
+        <!--settima cella-->
+
+        <GridLayout
+            android:id="@+id/grid6"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backcella"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:scaleType="fitCenter">
+
+            <ImageButton
+                android:id="@+id/button61"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button62"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button63"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button64"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button65"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button66"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button67"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button68"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button69"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+        </GridLayout>
+
+        <!--ottava cella-->
+
+        <GridLayout
+            android:id="@+id/grid7"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backcella"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:scaleType="fitCenter">
+
+            <ImageButton
+                android:id="@+id/button71"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button72"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button73"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button74"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button75"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button76"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button77"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button78"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button79"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+        </GridLayout>
+
+        <!--nona cella-->
+
+        <GridLayout
+            android:id="@+id/grid8"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backcella"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:scaleType="fitCenter">
+
+            <ImageButton
+                android:id="@+id/button81"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button82"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button83"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button84"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button85"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button86"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button87"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button88"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button89"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/casella"
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
+
+        </GridLayout>
+
+
+    </GridLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

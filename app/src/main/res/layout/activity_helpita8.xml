@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3">
+
+
+    <ImageView
+        android:id="@+id/tab1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/h6"
+        android:contentDescription="@string/tabella"/>
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab1"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:contentDescription="@string/per_vincere_devi_fare_tris_nella_tabella_principale"
+        android:text="@string/per_vincere_devi_fare_tris_nella_tabella_principale"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/acqua_scuro"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/homee"
+        android:contentDescription="@string/home"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tab1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/home" />
+
+    <ImageButton
+        android:contentDescription="@string/ricomincia_tutorial"
+        android:id="@+id/restartt"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/homee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ricomincia_tutorial" />
+
+
+</RelativeLayout>

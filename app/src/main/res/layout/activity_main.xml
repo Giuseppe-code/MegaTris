@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    >
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/log2"
+        android:text="@string/play"
+        android:contentDescription="@string/play"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/log"
+        android:text="@string/help"
+        android:contentDescription="@string/help"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="146dp"
+        android:layout_height="162dp"
+        android:layout_above="@+id/play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        app:srcCompat="@drawable/risorsa_5"
+        android:contentDescription="@string/logo_di_megatris"/>
+
+
+    <ImageButton
+        android:id="@+id/nomi"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/options"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/instawhite"
+        android:contentDescription="@string/ggworld_logo"/>
+
+    <Button
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/log2"
+        android:text="@string/about_us"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+
+
+</RelativeLayout>
+
+

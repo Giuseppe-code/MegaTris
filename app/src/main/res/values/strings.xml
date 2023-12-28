@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name" translatable="false">MegaTris</string>
+    <string name="help" translatable="false">help</string>
+    <string name="this_is_the_main_table" translatable="false">THIS IS THE MAIN TABLE</string>
+    <string name="giuseppe_vinci" translatable="false">Giuseppe Vinci</string>
+    <string name="giuseppe_stancanelli" translatable="false">Giuseppe Stancanelli</string>
+    <string name="croce" translatable="false">croce</string>
+    <string name="welcome" translatable="false">welcome</string>
+    <string name="tabella">tabella</string>
+    <string name="casella">casella</string>
+    <string name="next" translatable="false">next</string>
+    <string name="previous" translatable="false">previous</string>
+    <string name="in_each_section_of_the_table_there_s_another_table" translatable="false">in_each_section_of_the_table_there\'s_another_table</string>
+    <string name="for_example_if_the_first_player_puts_the_x_in_the_lower_left" translatable="false">for example, if the first player puts the x in the lower left...</string>
+    <string name="cerchio_disegnato">cerchio_disegnato</string>
+    <string name="the_opponent_will_have_to_play_in_the_lower_left_but_of_the_main_table" translatable="false">the opponent will have to play in the lower left, but of the main table</string>
+    <string name="in_other_words_your_choice_will_determine_a_part_of_your_opponent_s_choice_be_smart" translatable="false">in other words, your choice will determine a part of your opponent\'s choice, be smart!</string>
+    <string name="by_making_three_of_a_kind_in_the_small_table_you_conquer_the_square" translatable="false">by making three of a kind in the small table, you conquer the square</string>
+    <string name="to_win_you_have_to_make_three_of_a_kind_in_the_main_table" translatable="false">to win you have to make three of a kind in the main table</string>
+    <string name="home" translatable="false">home</string>
+    <string name="restart_tutorial" translatable="false">restart tutorial</string>
+    <string name="benvenuto">benvenuto</string>
+    <string name="questa_e_la_tabella_principale">QUESTA E\' LA TABELLA PRINCIPALE</string>
+    <string name="in_ogni_sezione_della_tabella_c_un_altra_tabella">in ogni sezione della tabella c\'è un\'altra tabella</string>
+    <string name="mettiamo_caso_che_il_giocatore_metta_la_x_in_basso_a_sinistra">mettiamo caso che il giocatore metta la x in basso a sinistra…</string>
+    <string name="l_avversario_dovr_giocare_in_basso_a_sinistra_ma_della_tabella_principale">l\'avversario dovrà giocare in basso a sinistra, ma della tabella principale</string>
+    <string name="in_altre_parole_la_tua_scelta_determiner_una_parte_della_scelta_del_tuo_avversario_sii_furbo">in altre parole, la tua scelta determinerà una parte della scelta del tuo avversario, sii furbo!</string>
+    <string name="facendo_tris_nella_tabella_piccola_conquisti_la_casella">facendo tris nella tabella piccola, conquisti la casella</string>
+    <string name="per_vincere_devi_fare_tris_nella_tabella_principale">per vincere devi fare tris nella tabella principale</string>
+    <string name="ricomincia_tutorial">ricomincia tutorial</string>
+    <string name="clicca_sopra_o_sotto">clicca sopra o sotto</string>
+    <string name="italiano">italiano</string>
+    <string name="inglese">inglese</string>
+    <string name="you_lost" translatable="false">YOU LOST</string>
+    <string name="play_again" translatable="false">play again</string>
+    <string name="play" translatable="false">play</string>
+    <string name="logo_di_megatris">logo di megatris</string>
+    <string name="ggworld_logo" translatable="false">GGworld logo</string>
+    <string name="about_us" translatable="false">about us</string>
+    <string name="progress_bar" translatable="false">progress bar</string>
+    <string name="play_time" translatable="false">play time</string>
+    <string name="draw" translatable="false">DRAW</string>
+    <string name="cerchio">cerchio</string>
+    <string name="player_vs_player" translatable="false">player vs player</string>
+    <string name="player_vs_pc" translatable="false">player vs pc</string>
+    <string name="you_win" translatable="false">YOU WIN</string>
+    <string name="round" translatable="false">round</string>
+    <string name="timer" translatable="false">timer</string>
+    <string name="restart" translatable="false">restart</string>
+    <string name="tabella_piccola" >tabella piccola</string>
+    <string name="bro" translatable="false">bro...</string>
+
+</resources>
