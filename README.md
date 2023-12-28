@@ -43,5 +43,5 @@ you must play in the corresponding tris of the Megatris. Whoever gets three in a
 
 <h1>Conclusion</h1>
 <p>If you wish, you can improve this project for personal use! 
-**However, we highly discourage you from sharing it.**
+**However, we highly discourage you, it wasn't made for be shared.**
 **That's all! Good Game!**</p>
