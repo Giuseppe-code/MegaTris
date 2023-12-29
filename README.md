@@ -1,9 +1,9 @@
 <h1>Overview -28/11/2022 </h1>
-<h3>Better of Tic Tac Toe</h3>
-<p>Megatris is a Android game created and implemented by @GiuseppeVinci04 and me in the last year of high school as our personal project.<br>
-    All is playable with a friend or with a not-so-intelligent bot.<br>
+<h3>Better than Tic Tac Toe</h3>
+<p>Megatris is an Android game created and implemented by @GiuseppeVinci04 and me in the last year of high school as our personal project.<br>
+    This game is playable with a friend or with a not-so-intelligent bot.<br>
   The game was realized in Java on Android Studio for Android phone,
-   is currently in the <a href="https://play.google.com/store/apps/details?id=it.ggworld.megatris">Play Store</a> and is monetize with AdMob.<br>
+   is currently available in the <a href="https://play.google.com/store/apps/details?id=it.ggworld.megatris">Play Store</a> and is monetize with AdMob.<br>
   We developed the idea, logo, and all activities, images (all in .svg), and classes..<br>
 </p>
 
